@@ -1,9 +1,8 @@
 const { Deck } = require('./Deck-type');
-// import Deck from './Deck'
 
 describe('deck-sort-challenge', () => {
   const deck = new Deck;
-  it('takes in two arrays and returns an array of objects', () => {
+  it.skip('takes in two arrays and returns an array of objects', () => {
     const suits = ['clubs', 'diamonds', 'hearts', 'spades', 'clubs', 'clubs', 'diamonds'];
     const values = [5, 7, 2, 4, 5, 6, 2];
     const expected = [
@@ -17,7 +16,7 @@ describe('deck-sort-challenge', () => {
     ];
     expect(deck.feed(suits, values)).toEqual(expected);
   });
-  it('sorts by value', () => {
+  it.skip('sorts by value', () => {
     const expected = [
       { suit: 'hearts', value: 2 },
       { suit: 'diamonds', value: 2 },
@@ -29,7 +28,7 @@ describe('deck-sort-challenge', () => {
     ];
     expect(deck.sortByValue()).toEqual(expected);
   });
-  it('sorts by suit', () => {
+  it.skip('sorts by suit', () => {
     const expected = [
       { suit: 'clubs', value: 5 },
       { suit: 'clubs', value: 5 },
@@ -41,7 +40,7 @@ describe('deck-sort-challenge', () => {
     ];
     expect(deck.sortBySuit()).toEqual(expected);
   });
-  it('sorts by value then suit', () => {
+  it.skip('sorts by value then suit', () => {
     const expected = [
       { suit: 'diamonds', value: 2 },
       { suit: 'hearts', value: 2 },
@@ -53,7 +52,7 @@ describe('deck-sort-challenge', () => {
     ];
     expect(deck.sortByValueThenSuit()).toEqual(expected);
   });
-  it('sorts by suit then value', () => {
+  it.skip('sorts by suit then value', () => {
     const expected = [
       { suit: 'clubs', value: 5 },
       { suit: 'clubs', value: 5 },
