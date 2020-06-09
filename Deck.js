@@ -86,7 +86,7 @@ class Deck {
       const cardToAddIndex = deckCopy.findIndex(card => (card.value === lowestValue && card.suit === suits[suitIndex]));
 
       if(cardToAddIndex === -1 && lowestValue < 15) lowestValue++;
-      if(cardToAddIndex === -1) {
+      else if(cardToAddIndex === -1) {
         suitIndex++;
         lowestValue = 15;
       } 
